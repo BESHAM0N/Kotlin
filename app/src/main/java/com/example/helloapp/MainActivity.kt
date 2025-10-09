@@ -23,6 +23,10 @@ class MainActivity : ComponentActivity() {
                     Greeting(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
+                    );
+                    GetAge(
+                        age = 25,
+                        modifier = Modifier.padding(innerPadding)
                     )
                 }
             }
@@ -34,6 +38,15 @@ class MainActivity : ComponentActivity() {
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
+        modifier = modifier
+    )
+}
+
+@Composable
+fun GetAge(age: Int, modifier: Modifier = Modifier)
+{
+    Text(
+        text = "My age $age",
         modifier = modifier
     )
 }
