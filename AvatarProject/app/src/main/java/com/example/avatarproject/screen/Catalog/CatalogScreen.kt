@@ -33,7 +33,6 @@ fun CatalogScreen(
                     style = MaterialTheme.typography.bodyLarge,
                     modifier = Modifier.padding(vertical = 8.dp)
                 )
-                Divider()
             }
         }
         Button(
